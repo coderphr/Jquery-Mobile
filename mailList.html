@@ -12,6 +12,7 @@
 
 <!-- 引入 jQuery Mobile 库 -->
 <script src="http://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/mailList.css"/>
 	</head>
 	<body>
 		<!--词汇role 作用-->
@@ -19,6 +20,34 @@
 			<div data-role = "header"  data-position = "fixed">  <!--data-position =“fixed”设置固定位置-->
 				<h1>联系人</h1>
 				<a href="#tell_grid" class="ui-btn ui-btn-right">切换显示</a>  <!--类样式.ui-btn 将链接转变为按钮 -->
+			</div>
+			<div data-role="main" class="ui-content">
+				<div class="ui-grid-a">
+					<div class="grid_photo ui-block-a">
+						<img src="img/team1.jpg" alt="">
+					</div>
+					<div class="grid_photo ui-block-b">
+						<img src="img/team2.jpg" alt="">
+					</div>
+					<div class="grid_photo ui-block-a">
+						<img src="img/team3.jpg" alt="">
+					</div>
+					<div class="grid_photo ui-block-b">
+						<img src="img/team4.jpg" alt="">
+					</div>
+				</div>
+			</div>
+			<div data-role = "footer" data-position = "fixed">
+				<div data-role = "navbar">
+					<ul>
+						<li>
+							<a href="mailTel.html" type="button" data-icon = "phone">拨号</a>
+						</li>
+						<li>
+							<a href="mailList.html" type="button" class="ui-btn-active" data-icon = "user">联系人</a>  <!--设置图标 data-icon= "里面设置图标的名字" -->
+						</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 		<div data-role = "page" id="tell_grid" >
@@ -36,7 +65,7 @@
 					</li>
 				</ul>
 			</div>
-				<div data-role = "footer" data-position = "fixed">
+			<div data-role = "footer" data-position = "fixed">
 				<div data-role = "navbar">
 					<ul>
 						<li>

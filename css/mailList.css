@@ -1,0 +1,7 @@
+.grid_photo {
+	padding: 10px;
+	box-sizing: border-box;
+}
+.grid_photo img {
+	width:100%;
+}

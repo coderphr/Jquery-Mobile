@@ -1,0 +1,33 @@
+ul,li,body {
+	margin: 0;
+	padding: 0;
+}
+ul {
+	list-style-type: none;
+}
+
+ul li {
+	width: 200px;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+	border: 1px solid #f00;
+}
+
+.btn {
+	width: 50px;
+	height: 75px;
+	background-color: red;
+}
+#listSplit {
+	display: flex;
+}
+
+#upPage {
+	background: url(../img/arrowLeft.svg) no-repeat left center;
+	background-size: cover;
+}
+#nextPage {
+	background: url(../img/arrowRight.svg) no-repeat left center;
+	background-size: cover;
+}

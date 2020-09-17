@@ -1,34 +1,53 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-		<link rel="stylesheet" href="https://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.css">
-		<script src="https://apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
-		<script src="https://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		<meta charset="UTF-8">
 		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<!-- 引入 jQuery Mobile 样式 -->
+<link rel="stylesheet" href="http://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+<!-- 引入 jQuery 库 -->
+<script src="http://apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<!-- 引入 jQuery Mobile 库 -->
+<script src="http://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 	</head>
 	<body>
-		<div data-role="page" id="tel-grid">
-			<div data-role="header" data-position="fixed">
+		<!--词汇role 作用-->
+		<div data-role = "page" id="tell_list"  >
+			<div data-role = "header"  data-position = "fixed">  <!--data-position =“fixed”设置固定位置-->
 				<h1>联系人</h1>
-				<a href="#" class="ui-btn ui-btn-right">切换显示</a>
+				<a href="#tell_grid" class="ui-btn ui-btn-right">切换显示</a>  <!--类样式.ui-btn 将链接转变为按钮 -->
 			</div>
-			<div data-role="main" class="ui-content">
-				<ul data-role="listview" data-inset="true">
-					<li class="list_name">张三</li>
-					<li class="list_name">李四</li>
+		</div>
+		<div data-role = "page" id="tell_grid" >
+			<div data-role = "header"  data-position = "fixed">  <!--data-position =“fixed”设置固定位置-->
+				<h1>联系人</h1>
+				<a href="#tell_list" class="ui-btn ui-btn-right">切换显示</a>  <!--类样式.ui-btn 将链接转变为按钮 -->
+			</div>
+			<div data-role = "main" class="ui-content">
+				<ul data-role = "listview" data-inset ="true" >
+					<li class="list_name">
+						张三
+					</li>
+					<li class="list_name">
+						李四
+					</li>
 				</ul>
 			</div>
-			<div data-role="footer" data-position="fixed">
-				<div data-role="navbar">
+				<div data-role = "footer" data-position = "fixed">
+				<div data-role = "navbar">
 					<ul>
-						<li><a href="mailTel.html" data-icon="phone">拨号</a></li>
-						<li><a href="#" data-icon="user" class="ui-btn-active">联系人</a></li>
+						<li>
+							<a href="mailTel.html" type="button" data-icon = "phone">拨号</a>
+						</li>
+						<li>
+							<a href="mailList.html" type="button" class="ui-btn-active" data-icon = "user">联系人</a>  <!--设置图标 data-icon= "里面设置图标的名字" -->
+						</li>
 					</ul>
 				</div>
 			</div>
 		</div>
-		<div data-role="page" id="tel-list"></div>
 	</body>
 </html>

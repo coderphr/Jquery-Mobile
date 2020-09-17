@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Jquery mobile案例</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" href="http://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+<!-- 引入 jQuery 库 -->
+<script src="http://apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<!-- 引入 jQuery Mobile 库 -->
+<script src="http://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		<style type="text/css">
+			.ui-block-a img,.ui-block-b img,.ui-block-c img{
+				width: 100%;
+			}
+		</style>
+	</head>
+	<body>
+		<div data-role = "page" id="pageone" data-theme = "b"> <!-- data-theme 主题模式-->
+			<div data-role = "panel" id="myPanel" data-dispaly = "reveal">
+				<h1>襄阳景点</h1>
+				<p>唐城 ，古隆中，襄阳古城</p>
+				
+			</div>
+			<div data-role = "header" data-position = "fixed">
+				<a href="" class="ui-btn ui-icon-home ui-btn-icon-left ui-corner-all ui-shadow">主页</a>  <!--设置图标先设置按钮然后图标图标方向-->
+				<h1>欢迎大家来到我的页面一</h1>
+				<a href="" class="ui-btn ui-icon-search ui-btn-icon-right">搜索</a>
+			</div>
+			<div data-role = "main" class="ui-content">
+				<p>
+					<a href="#pagetwo" data-transition = "flip">切换到第二页</a>
+				</p>
+				<p>
+					<a href="#myPanel">襄阳十大美景</a>
+				</p>
+				<div data-role = "collapsible">   <!--collapsible可折叠的-->
+					<h1>宜昌景点，点开看看</h1>
+					<p>三峡大坝，葛洲坝水利工程，三峡大瀑布，三峡人家</p>
+				</div>
+				<div class="ui-grid-b"> <!--网格grid-->
+					<div class="ui-block-a">
+						<img src="../img/1.jpg"/>
+					</div>
+					<div class="ui-block-b">
+						<img src="../img/2.jpg"/>
+					</div>
+					<div class="ui-block-c">
+						<img src="../img/3.jpg"/>
+					</div>
+				</div>
+				<h2>列表项目listView</h2>
+				<ul data-role = "listview" data-inset = "true">
+					<li><a href="http://www.wtu.edu.cn">武汉纺织大学</a></li>
+					<li data-icon = "plus"><a href="#">武汉轻工大学</a></li>
+					<li data-icon = "minus"><a href="#">湖北师范大学</a></li>
+				</ul>
+			</div>
+			<div data-role = "footer">
+				<p >脚步文本</p>
+			</div>
+		</div>
+		<div data-role = "page" id="pagetwo" > <!--data-dialog 变成对话框-->
+			<div data-role = "header" data-position = "fixed">
+				<h1>欢迎大家来到我的页面</h1>
+				<a href="#" type="button" class="ui-btn ui-btn-right ui-icon-home ui-btn-icon-right" >切换模式</a>
+			</div>
+			<div data-role = "main" class="ui-content">
+				<p>我是一名技师算计网络专业的学生</p>
+				<p><a href="#pageone" data-transition = "slide">跳转到第一页</a></p>
+			</div>
+			<div data-role = "footer" data-position = "fixed">
+				<p >脚步文本</p>
+			</div>
+		</div>
+	</body>
+</html>
